@@ -32,11 +32,7 @@
     })
 
 #else
-    #if defined(_M_ARM64) || defined(__aarch64__) || defined(_M_ARM) || defined(__arm__)
-    #include <arm_neon.h>
-    #elif defined(_M_X64) || defined(__amd64__) || defined(_M_IX86) || defined(__i386__)
     #include <immintrin.h>
-    #endif
 #endif 
 
 #ifndef _rdrand16
